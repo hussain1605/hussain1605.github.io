@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+   
     <link rel="stylesheet" media="screen" href="css/fullpage.min.css">
     <link rel="stylesheet" media="screen" href="css/styles.min.css">
     <link rel="icon" type="icon" href="oculus-favicon.png">
@@ -216,6 +216,59 @@ path, text, polygon {
     <!-- scroll to top button -->
     <!-- <i class="fa fa-angle-up" id="scrollUp" onclick="topFunction()"></i> -->
 
+
+<style type="text/css">
+    .slide_text{
+        text-align: justify; line-height: 120%;
+        font-size: 2em;
+         color: white;  
+         font-family: 'Oswald', sans-serif;
+         width: 60%;
+        margin: 0 auto;
+        display: block;
+        letter-spacing: 2px;
+    }
+
+    .size_svg{
+        margin: 20px auto;
+        width:36%;
+         height:auto;
+
+    }
+
+    .smoke_hand{
+        height: 400px; position: absolute; left: 30%; opacity: 0.7;
+        z-index: -10
+    }
+
+
+    @media only screen and (max-width: 767px){
+
+        .slide_text{
+            font-size: 1.5em;
+            width: 70%;
+        }
+
+        .size_svg{
+         margin: 10% auto;
+            width:80%;
+            height:auto;
+        }
+
+
+            .smoke_hand{
+        height: 300px; position: absolute; left: -3%; 
+    }
+
+
+    }
+
+</style>
+
+
+
+
+
     <div id="fullpage">
 <div class="reveal section">
 
@@ -223,11 +276,11 @@ path, text, polygon {
 
             <div class="slides" >
 
-                <section  data-background-image="newyear.gif" data-background-color="black" data-background-opacity="0.3" data-transition="zoom" style="padding: 2rem;">
+                <section  data-background-image="newyear.gif" data-background-color="black" data-background-opacity="0.3" data-transition="zoom" style="padding: 2rem 0;">
                     <div class="row" >
 
                   <img src="era.png" style="opacity: 0.5; margin: 0 auto; width: 80%; height: auto" class="animated infinite bounce delay-2s">
-                       <p   style=" text-align: justify; line-height: 120%;  font-size: 2em; color: white;  font-family: 'Oswald', sans-serif;width: 60%; margin: 0 auto;">The transition from the 20th century into the 21st was a momentous point in history. As December 31 of 1999 bled into January 1 of 2000, an era ended and another began. </p>
+                       <p class="slide_text">The transition from the 20th century into the 21st was a momentous point in history. As December 31 of 1999 bled into January 1 of 2000, an era ended and another began. </p>
                       
                         
                        
@@ -239,9 +292,9 @@ path, text, polygon {
                     </div>
                 </section>
                 
-                <section data-background-image="born.jpg" data-background-color="black" data-background-opacity="0.6" data-transition="zoom" style="padding: 2rem;">
-                    <p   style=" text-align: justify; line-height: 120%;  font-size: 2em; color: white;  font-family: 'Oswald', sans-serif;width: 60%; margin: 0 auto;">And unlike the millennials, who got to see the change with their young eyes, we were born into the change. We are Generation Z, and we are as old as this new century is. </p>
-                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40%" height="auto" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                <section data-background-image="born.jpg" data-background-color="black" data-background-opacity="0.6" data-transition="zoom" style="padding: 2rem 0;">
+                   
+                    <svg class="size_svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"  version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
 viewBox="0 0 19548.8 16184.68"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
@@ -588,7 +641,7 @@ viewBox="0 0 19548.8 16184.68"
   </g>
  </g>
 </svg>
-
+ <p  class="slide_text">And unlike the millennials, who got to see the change with their young eyes, we were born into the change.<br> We are Generation Z, and we are as old as this new century is. </p><br>
                     
                   
                     
@@ -601,8 +654,8 @@ viewBox="0 0 19548.8 16184.68"
                     <canvas id="canvas"  height="100%" width="100%;" > 
                     </canvas>
                     <div id="hi">
-                    <img src="smoke.png" style="height: 400px; position: absolute; left: 30%;">
-                    <p   style=" text-align: justify; line-height: 120%;  font-size: 2em; color: white;  font-family: 'Oswald', sans-serif;width: 60%; margin: 0 auto;">We have been a part of a transitioning world. And it's not just self-reinvention that we've done smoothly - we have made the change around us better.</p>
+                    <img src="smoke.png" style="" class="smoke_hand">
+                    <p   class="slide_text">We have been a part of a transitioning world. And it's not just self-reinvention that we've done smoothly - we have made the change around us better.</p>
                     </div>
      
 
@@ -610,15 +663,15 @@ viewBox="0 0 19548.8 16184.68"
                 </section>
 
 
-            <section data-background-image="collage.jpg" data-background-color="black"  data-transition="zoom">
+            <section data-background-image="collage.jpg" data-background-color="black"  data-transition="zoom" data-background-opacity="0.5" >
                     
-                    <p>We are the youngest minds in research, the youngest CEOs and entrepreneurs finding their footing in the world. </p>
+                    <p  class="slide_text" style="text-align: center; font-size: 3em;">We are the youngest minds in research, the youngest CEOs and entrepreneurs finding their footing in the world. </p>
                     
                 </section>
 
-              <section data-background-image="collage.jpg" data-background-color="black"  data-transition="zoom">
+              <section data-background-image="sa.gif" data-background-color="black"  data-transition="zoom" data-background-opacity="0.5">
                     
-                    <p>SPIT found this generation a fitting encapsulation of Oculus 2k19, and is proud to announce the theme for the same - Generation Z. We believe it represents everything Oculus strives and stands for - change, flexibility, modernism and fun. Oculus 2k19 will hopefully be the perfect generational paradigm.</p>
+                    <p class="slide_text" style="text-align: center;">SPIT found this generation a fitting encapsulation of Oculus 2k19, and is proud to announce the theme for the same - Generation Z.<br><br> We believe it represents everything Oculus strives and stands for - change, flexibility, modernism and fun. Oculus 2k19 will hopefully be the perfect generational paradigm.</p>
                     
                 </section>
 
@@ -638,6 +691,10 @@ viewBox="0 0 19548.8 16184.68"
                     minScale: 1,
                     maxScale: 1
             });
+
+            Reveal.configure({
+  autoSlide: 4000
+});
         </script>
 
 
