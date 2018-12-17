@@ -113,7 +113,7 @@ body {
             $(window).load(function () {
 
                 console.log('loaded');
-                preloaderFadeOutTime = 500;
+                preloaderFadeOutTime = 400;
 
                 function hidePreloader() {
                     var preloader = $('.spinner-wrapper');
@@ -156,8 +156,8 @@ body {
     </script>
     <div class="spinner-wrapper">
         <div class="spinner">
-            <img id="preload-img1" src="./images/outer.png">
-            <img id="preload-img2" src="./images/inner.png">
+            <img id="preload-img1" src="./images/outer.webp">
+            <img id="preload-img2" src="./images/inner.webp">
         </div>
     </div>
 
@@ -398,7 +398,7 @@ body {
     @media only screen and (max-width: 767px){
 
         .slide_text{
-            font-size: 1.3em;
+            font-size: 1.5em;
             width: 83%;
         }
 
@@ -412,7 +412,7 @@ body {
         .smoke_hand{
             width: 100vw;
            height: auto;
-            margin: 20% auto;
+            margin: 16% auto;
             position: absolute;
             left: 0%;
                     }
@@ -438,29 +438,27 @@ body {
 
             <div class="slides" >
 
-                <section  data-background-image="newyear.gif" data-background-color="black" data-background-opacity="0.3" data-transition="zoom" style="padding: 2rem 0;">
+                <section  data-background-image='newyear.gif' data-background-color="black" data-background-opacity="0.6" data-transition="zoom" style="padding: 2rem 0;">
                     <div class="row" >
 
-                  <img src="era.png" class="glow era" style="" >
+                  <img data-src="era.webp" class="glow era"  >
                        <p class="slide_text">The transition from the 20th century into the 21st was a momentous point in history. As December 31 of 1999 bled into January 1 of 2000, an era ended and another began. </p>
 
                     </div>
                 </section>
-                <section data-background-image="born.png" data-background-color="black" data-background-opacity="0.6" data-transition=""> 
-               
-                   
-           
-                    <p class="slide_text">
+
+                <section data-background-image="born.webp" data-background-color="black" data-background-opacity="0.6" data-transition="zoom" data-background-size="cover" data-background-position="center" > 
+                <p class="slide_text">
                     And unlike the millennials, who got to see the change with their young eyes, we were born into the change. We are Generation Z, and we are as old as this new century is.</p>
                
         
 
         
                     </section>
-
+                  
               
 
-              <section   data-background-image="smokebg.jpg" data-background-color="black" data-background-opacity="0.7" data-transition="zoom" data-background-size="cover" data-background-position="center" >
+              <section   data-background-image="smokebg.jpg" data-background-color="black" data-background-opacity="1" data-transition="zoom" data-background-size="cover" data-background-position="center" >
                 
                     
                  
@@ -469,26 +467,26 @@ body {
                     <div id="hi">
                   
                     <p   class="slide_text">We have been a part of a transitioning world. And it's not just self-reinvention that we've done smoothly - we have made the change around us better.</p>
-                      <img src="smoke.png" style="" class="smoke_hand glow">
+                      <img data-src="smoke.png" style="" class="smoke_hand glow">
                     </div>
      
 
                    
                 </section  >
-                  
-                <section data-background-image="genztech.jpg" data-background-color="black" data-background-opacity="0.3" data-transition="zoom" >
+
+                <section data-background-image="./genztech.webp" data-background-color="black" data-background-opacity="0.5" data-transition="zoom" data-background-size="cover" data-background-position="center" >
                       <p class="slide_text" style="text-align: center;">We have seen everything change and been a part of the change - we have used both flip phones and smart phones, connected to the Internet using both dial-ups and WiFi, played both 8-bit games and The Last of Us. We went from playing songs on cassettes to Spotify, from watching movies on cable to Netflix. </p>
                     
                 </section>
-
+<!--
               <section data-background-image="sa.gif" data-background-color="black"  data-transition="zoom" data-background-opacity="0.5">
                     
                     <p class="slide_text" style="text-align: center;">SPIT found this generation a fitting encapsulation of Oculus 2019, and is proud to announce the theme for the same -<b> Generation Z</b>.<br><br> We believe it represents everything Oculus strives and stands for - change, flexibility, modernism and fun.<br><br>  Oculus 2019 will hopefully be the perfect generational paradigm.</p>
                     
-                </section>
+                </section>-->
 
 
-                <section  data-background-image="crowd.gif" data-background-color="white"  data-transition="zoom" data-background-opacity="0.25" data-transition="zoom">
+                <section  data-background-video="crowd.webm" data-background-color="white" data-background-video-loop='true' data-transition="zoom" data-background-opacity="0.25" data-transition="zoom">
 
                      <div class=""  id="particles-js" style="width: 100vw;height: 100vh;" >
 <script type="text/javascript">$(window).bind('resize', function () {
@@ -574,7 +572,7 @@ body {
             </div>
 
             <div class="about-oculus">
-                <a href="#"><img src="oculus.png"></a>
+                <a href="#"><img data src="oculus.webp"></a>
                 <p class="about-oculus-para">
                     Sardar Patel Institute of Technology presents to you Oculus 2019.
                     <span class="about-oculus-hide-mobile"> Oculus is a Techno-Cultural festival that represents the synergy
@@ -596,72 +594,6 @@ body {
 
        </section>
 
-<!--
-
-  <section>
-      <div id="timeline">
-  <div class="tl-item">
-    
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
-    
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2011</p>
-    </div>
-
-    <div class="tl-content">
-      <h1>Lorem ipsum dolor sit</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-    </div>
-
-  </div>
-
-  <div class="tl-item">
-    
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
-    
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2013</p>
-    </div>
-
-    <div class="tl-content">
-      <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
-      <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
-    </div>
-
-  </div>
-
-  <div class="tl-item">
-    
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
-    
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2014</p>
-    </div>
-
-    <div class="tl-content">
-      <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
-      <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
-    </div>
-
-  </div>
-
-  <div class="tl-item">
-    
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
-    
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2016</p>
-    </div>
-
-    <div class="tl-content">
-      <h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
-      <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
-    </div>
-
-  </div>
-  </div>
-</section>
--->
 </div>
 
 </div>
@@ -673,12 +605,11 @@ body {
                     height: "100%",
                     margin: 0,
                     minScale: 1,
-                    maxScale: 1
+                    maxScale: 1,
+
+
             });
 
-            Reveal.configure({
-  autoSlide: 6000
-});
         </script>
 
         <style type="text/css">
@@ -691,11 +622,13 @@ body {
                     height:auto; width: 110%; opacity: 0.5
                 }
 
-
+                .littext{
+                    padding-top:35%;
+                }
             @media only screen and (max-width: 767px){
 
              .literary_img{
-                    width: 80%; 
+                    width: 64%; 
                 }
 
                 .technical,  .cultural  {
@@ -714,6 +647,10 @@ body {
 
                 }
 
+                 .littext{
+                    padding-top:5%;
+                }
+
                 ._spacing{ margin : 3% auto; }
             }
 
@@ -722,17 +659,16 @@ body {
             <section class="strips">
                 <article class="strips__strip" >
                   <div class="strip__content" >
-                    <img class="hiddenmobile strip__title technical " style="" src="./images/technical.png">
+                    <img class="hiddenmobile strip__title technical " style="" src="./images/technical.webp">
                     <h1 class="strip__title"  data-name="Lorem">Technical</h1>
                     <div class="strip__inner-text">
                         <div class="row">
                             <div class="col-sm-3 col-md-5">
-                                    <img class="eventimg" src="./images/technical.png" style="width:60%;height:auto; opacity: 0.5">
+                                    <img class="eventimg" src="./images/technical.webp" style="width:60%;height:auto; opacity: 0.5">
                             </div>
                             <div class="col-sm-9 col-md-7">
                                 <div class="hidden-xs" style="padding-top:20%"></div>
-                                    No problem can be solved from the same level of consciousness that created it.
-                                    <br/>Technical Events provide a platform where participants can implement their astounding coding and technical skills. 
+                                    Think you have the tech skills to pay the bills? Can you code your way out of any problem and hack your way to any solution? Want a platform to showcase your robotics skills? Meet industry leaders hear what they have to say? Then come on and be a part of Oculus Tech Events!
                                     <br/><br/>
                                     <a href="./events.final.html" style="font-size:20px;color:black;">Checkout the events</a>
                             </div>
@@ -744,18 +680,16 @@ body {
 
                 <article class="strips__strip">
                   <div class="strip__content">
-                    <img class="hiddenmobile strip__title literary" style=" " src="./images/literary.png">
+                    <img class="hiddenmobile strip__title literary" style=" " src="./images/literary.webp">
                     <h1 class="strip__title" data-name="Ipsum">Literary</h1>
                     <div class="strip__inner-text">
                             <div class="row">
                                     <div class="col-sm-3 col-md-5">
-                                            <img class="eventimg literary_img" src="./images/literary.png"  style=""> 
+                                            <img class="eventimg literary_img" src="./images/literary.webp"  style=""> 
                                     </div>
                                     <div class="col-sm-9 col-md-7">
-                                        <div class="hidden-xs" style="padding-top:5%;"></div>
-                                            Pen is mightier than sword. 
-                                            <br/>Oculus presents Literary Events which presents a golden opportunity to everyone to showcase their flair in content writing skills.
-                                            <br/><br/>
+                                        <div class="hidden-xs littext" style=""></div>
+                                            Remember when we were kids and we wanted to do it all? Some of us wanted to be leaders, some of us wanted to be storytellers. Come realise those dreams with our amazing literary events. Step into the shoes of a diplomat and save the world or take a minute to speak your heart out. Hear real stories from real people. Come, interact, live<br><br>
                                             <a href="./events.final.html" style="font-size:20px;color:black;">Checkout the events</a>
                                     </div>
                             </div>
@@ -765,17 +699,16 @@ body {
 
                 <article class="strips__strip">
                   <div class="strip__content">
-                    <img class="hiddenmobile strip__title cultural" style="" src="./images/cultural.png">
+                    <img class="hiddenmobile strip__title cultural" style="" src="./images/cultural.webp">
                     <h1 class="strip__title" data-name="Dolor">Performing Arts</h1>
                     <div class="strip__inner-text">
                             <div class="row">
                                     <div class="col-sm-3 col-md-5">
-                                            <img class="eventimg" src="./images/cultural.png"  style="width:90%;height:90%;">
+                                            <img class="eventimg" src="./images/cultural.webp"  style="width:75%;height:auto;">
                                     </div>
                                     <div class="col-sm-9 col-md-7">
                                         <div class="hidden-xs _spacing"></div>
-                                            Culture makes people understand each other better and collectively helps them evolve.
-                                            <br/>Performing Arts are the perfect chance for participants to present and witness their singing, dancing and other vivid varities of cultural activities.
+                                           Sing like Beyonce, Dance like Beyonce, and dress like Beyonce. We can't help the fact that Beyonce can do it all, but at Oculus' cultural showcase so can you! Fashion show, dance competition, singing competition you name it, we got it! Participate and hear the crowd roar your name only at Oculus
                                             <br/><br/>
                                             <a href="./events.final.html" style="font-size:20px;color:black;">Checkout the events</a>
                                     </div>
@@ -786,17 +719,16 @@ body {
 
                 <article class="strips__strip">
                   <div class="strip__content">
-                    <img class="hiddenmobile strip__title fun " style="" src="./images/fun.png">
+                    <img class="hiddenmobile strip__title fun " style="" src="./images/fun.webp">
                     <h1 class="strip__title" data-name="Sit">Fun</h1>
                     <div class="strip__inner-text">
                             <div class="row">
                                     <div class="col-sm-3 col-md-5">
-                                            <img class="eventimg" src="./images/fun.png"  style="width:80%;height:auto;">
+                                            <img class="eventimg" src="./images/fun.webp"  style="width:80%;height:auto;">
                                     </div>
                                     <div class="col-sm-9 col-md-7">
-                                        <div class="hidden-xs" style="padding-top:20%"></div>
-                                            All work and no play makes jack a dull boy. 
-                                            <br/>Presenting to you Fun Events where participants can enjoy the time of their lives.
+                                        <div class="hidden-xs" style="padding-top:10%"></div>
+                                            Competition can be exhausting and don't even get us started on the academic burden we face as college students. It's time to let loose the shackles and let our hair down. Oculus fun events have something for everyone. From bouncing around in an inflated ball to singing out you favorite songs, Oculus sees all!
                                             <br/><br/>
                                             <a href="./events.final.html" style="font-size:20px;color:black;">Checkout the events</a>
                                     </div>
@@ -811,7 +743,7 @@ body {
 
 
 
-        <div class="section" id="section4" style="background-image: url(./images/social.png); background-size: cover;">
+        <div class="section" id="section4" style="background-image: url(./images/social.webp); background-size: cover;">
             <span class="hiddenmobile"><br/></span><br>
             <div class="ngoheading">
                 <h1>OCULUS FOR A CAUSE</h1>
@@ -846,7 +778,7 @@ body {
 
 
 
-        <div class="section" id="section10" style="background-image: url(./images/contact.png); background-size: cover; background-color: black;">
+        <div class="section" id="section10" style="background-image: url(./images/contact.webp); background-size: cover; background-color: black;">
             <footer>
                 <center><img style="width: 200px; " src="logotext.png"></center>
                 <h2 style="text-align: center;margin-top: 5vh">LINKS</h2>
